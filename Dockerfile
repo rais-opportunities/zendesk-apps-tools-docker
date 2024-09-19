@@ -1,5 +1,7 @@
 FROM ruby:2.7-alpine
 
+RUN gem update --system 3.2.15
+
 RUN gem install rake
 
 RUN set -ex  \
